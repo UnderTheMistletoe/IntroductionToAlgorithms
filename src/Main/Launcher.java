@@ -1,9 +1,6 @@
 package Main;
 
-import Chapter1.BinaryAdd;
-import Chapter1.InsertionSort;
-import Chapter1.Search;
-import Chapter1.SelectSort;
+import Chapter1.*;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -15,9 +12,10 @@ public class Launcher {
 
 
     public static void main(String[] args) {
-        int[] a = {122, 11, 111, 1, 3};
+        int[] a = {11,23,4,5,12,3,4,5,6,6,7,8,352,2,1,1,};
 
-        SelectSort.sort(a);
+        MergeSort.sort(a, 0, a.length-1);
+
         System.out.println(Arrays.toString(a));
     }
 }
